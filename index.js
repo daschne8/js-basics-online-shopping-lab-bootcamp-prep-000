@@ -25,7 +25,7 @@ function viewCart() {
   for(var i=0;i<cart.length;i++){
     inYourCart = inYourCart + `${cart[i].itemName} at $${cart[i].itemPrice}`;
     if(i !== cart.length-1){
-      inYourCart += ", "
+      inYourCart += ", and "
     }
 }
   inYourCart += "."
