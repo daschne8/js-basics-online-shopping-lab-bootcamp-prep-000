@@ -30,6 +30,7 @@ function viewCart() {
   }else{
     inYourCart += ", "
   }
+  return inYourCart;
 }
 
 function total() {
