@@ -27,11 +27,10 @@ function viewCart() {
     if(i === cart.length-1){
       inYourCart += "."
     }else if (i === cart.length - 2) {
-      inYourCart += ", and";
-    }else{
-      inYourCart += '.'
+      inYourCart += ", and ";
     }
-}
+  }
+  inYourCart += "."
   return inYourCart;
 }
 
