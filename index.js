@@ -35,11 +35,20 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  total = 0;
+  for(var i = 0; i < cart.length ; i++){
+    total += cart[i].itemPrice;
+  }
+  return total;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item) {
+      cart.splice(i,1);
+    }
+  }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
