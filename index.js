@@ -24,11 +24,14 @@ function viewCart() {
   }
   for(var i=0;i<cart.length;i++){
     inYourCart = inYourCart + `${cart[i].itemName} at $${cart[i].itemPrice}`;
-    if(i !== cart.length-1){
-      inYourCart += ", and "
+    if(i === cart.length-1){
+      inYourCart += "."
+    }else if (i === cart.length - 2) {
+      inYourCart += ", and";
+    }else{
+      inYourCart += '.'
     }
 }
-  inYourCart += "."
   return inYourCart;
 }
 
